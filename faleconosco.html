@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOOLÓGICO</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+@charset "utf-8";
+
+:root {
+    --cor0:#04D939;
+    --cor1:#03A63C;
+    --cor2:#027333;
+    --cor3:#025939;
+    --cor4:#012340;
+    --cor5:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+   main{
+    min-width: 100px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-radius:15px;
+    color:var(--cor5)
+}
+
+fieldset{
+  border:3px solid dodgerblue;
+}
+
+legend{
+  border:1px solid dodgerblue;
+  padding:10px;
+  text-align:center;
+  background-color:dodgerblue;
+  font-weight:bold;
+  border-radius:8px;
+}
+
+.inputbox{
+  position:relative;
+}
+
+.inputUser{
+  background:none;
+  border:none;
+  border-bottom:1px solid var(--cor5);
+  outline:none;
+  color:var(--cor5);
+  font-size:15px;
+  width:100%;
+  letter-spacing:2px;
+}
+
+#submit{
+  background-image:linear-gradient(to right,rgb(0,92,197),rgb(90,20,220)) ;
+  width:49%;
+  border:none;
+  padding:15px;
+  color:var(--cor5);
+  font-size:15px;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+#submit:hover{
+background-image:linear-gradient(to right,rgb(0,80,172),rgb(80,19,195)) ;
+}
+
+.group{
+    background-color: #012340;
+color: aliceblue;
+}
+
+#nasc{
+    border-radius: 12px;
+}
+
+    </style>
+</head>
+<body>
+     
+    <header>
+
+        <H1>ZOOLÓGICO CULTURAL RJ</H1>
+    
+    <P>Dá um pulinho aqui com toda a família e amigos!</P>
+    
+    </header>
+    
+    <nav>
+    
+        <a href="index.html">INICIO</a>
+        <a href="ingressos.html">INGRESSOS</a>
+        <a href="animais.html">ANIMAIS</a>
+        <a href="faleconosco.html">FALE CONOSCO</a>
+    
+    </nav>
+    
+    <main>
+        <form action="mailto:kaneki1234hide@gmail.com" method="post" id="contato">
+            <fieldset id="usuário">
+                <legend>Identificação do Usuário</legend>
+<br><br>
+  <div class="inputbox"> <label for="nome">Nome:</label><input type="text" name="tnome" id="nome" class="inputUser" size="30" maxlength="50" placeholder="digite seu nome"></input> </div> <br><br>
+
+
+<div class="inputbox"> <label for="senha" >Senha:</label><input type="password" name="tsenha" id="senha" class="inputUser" size="15" maxlength="10" placeholder="senha de 10 digitos"></input> </div>
+<br><br>
+
+<div class="inputbox"> <label for="email" >E-mail:</label><input type="email" name="temail" id="email" class="inputUser" size="30" maxlength="30" placeholder="digite seu email"></input>
+ </div> <br><br>
+                        
+                     <fieldset id="sexo"> 
+                            <legend>Sexo:</legend><br><br>
+                            <input type="radio" name="tsexo" id="masc" checked></input><label for="masc">MASCULINO</label>
+                        <br>
+                            <input type="radio" name="tsexo" id="femi"></input><label for="femi">FEMIMINO</label>
+                         <br>   
+ <input type="radio" name="tsexo" id="outro"></input><label for="outro">OUTRO</label>
+                            
+                        </fieldset>
+<br><br>
+
+  <div class="inputbox"> <label for="nasc">Data de Nascimento:</label><input type="date" name="tnasc" id="nasc"></input></div>
+  
+<br><br>
+                    
+            </fieldset>
+            <br>
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+<br><br>
+
+<div class="inputbox"> <label for="rua">Logradouro:</label><input type="text" name="trua" id="rua" class="inputUser" size="30" maxlength="50" placeholder="avenida"></input></div>
+
+<br><br>
+
+<div class="inputbox"> <label for="num">Número:</label><input type="number" name="tnum" id="num" class="inputUser" size="30" maxlength="15" placeholder="digite seu numero"></input></div>
+<br><br>
+  
+  <div class="inputbox"> <label for="Est">Estado:</label><select name="tEst" id="Est" class="inputUser">
+                    <optgroup class="group" label="região sudeste">
+                        <option value="RJ">RIO DE JANEIRO</option>
+                        <option value="SP">SÃO PAULO</option>
+                        <option value="MG">MINAS GERAIS</option>
+                        <option value="ES">ESPIRITO SANTO</option>
+                    </optgroup>
+
+                    <optgroup class="group" label="região norte">
+                        <option value="AM">AMAZONAS</option>
+                        <option value="RR">RORAIMA</option>
+                        <option value="AP">AMAPÁ</option>
+                        <option value="PA">PARÁ</option>
+                        <option value="TO">TOCANTINS</option>
+                        <option value="RO">RONDÔNIA</option>
+                        <option value="AC">ACRE</option>
+                    </optgroup>
+
+                    <optgroup class="group" label="região nordeste">
+                        <option value="MA">MARANHÃO</option>
+                        <option value="PI">PIAUÍ</option>
+                        <option value="CE">CEARÁ</option>
+                        <option value="PE">PERNAMBUCO</option>
+                        <option value="RN">RIO GRANDE DO NORTE</option>
+                        <option value="PB">PARAÍBA</option>
+                        <option value="SE">SERGIPE</option>
+                        <option value="AL">ALAGOAS</option>
+                        <option value="BA">BAHIA</option>
+                    </optgroup>
+
+                    <optgroup class="group" label="região centro-oeste">
+                        <option value="MT">MATO GROSSO</option>
+                        <option value="MS">MATO GROSSO DO SUL</option>
+                        <option value="GO">GOIÁS</option>
+                    </optgroup>
+
+                    <optgroup class="group" label="região sul">
+                        <option value="PR">PARANÁ</option>
+                        <option value="RS">RIO GRANDE DO SUL</option>
+                        <option value="SC">SANTA CATARINA</option>
+                    </optgroup>
+
+                    </select> </div>
+<br><br>
+
+<div class="inputbox"> <label for="Cid">Cidade:</label><input type="text" name="tCid" id="Cid" class="inputUser" size="30" maxlength="50" placeholder="digite sua cidade"></input> </div>
+<br><br>
+            </fieldset>
+            
+            <br><fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+<br><br>
+
+<div class="inputbox"> <label for="Msg">Mensagem:</label><textarea name="tMsg" id="Msg" class="inputUser" cols="40" rows="5" placeholder="deixe sua Mensagem"></textarea></div>
+<br><br>
+                
+            </fieldset>
+           
+            
+            <input type="submit" id="submit" value="enviar">
+            <input type="reset" id="submit" value="limpar"><br>
+        </form>
+        
+    </main>
+
+    <footer id="rodape">
+        <b>feito por Felipe e Nicholas-2023</b>
+        <a href="https://pt-br.facebook.com/" target="_blank"><img src="imagens/facebook.png" width="2.5%"> FACEBOOK</a> | <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" width="2.5%">INSTAGRAM</a>
+            </footer>
+    
+</body>
+</html>

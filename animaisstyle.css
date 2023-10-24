@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.holder{
+    display: flex;
+    justify-content: center;
+ }
+ img{
+    width: 100%;
+ }
+ .imagem{
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+ }
+ .imagem::after{
+    content: attr(data-title);
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+ }
+ section{
+    text-align: center;
+ }
+ .tamanho{
+    width: 5%;
+ }
+
+ 
+
+ 
